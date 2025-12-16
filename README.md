@@ -1,6 +1,6 @@
 # Generative Machine Learning
 
-This repository showcases two of the most relevant generative models as of July 2023, generative Adversarial Networks (GANs) and Diffusion models, for the generation of Simpsons faces and MNIST numbers. For for more information, see [post](https://mbaranr.github.io/blog/2023/simpsons_gan/).
+For for more information, see [post](https://mbaranr.github.io/blog/2023/simpsons_gan/).
 
 ## GAN
 
