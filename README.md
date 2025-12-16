@@ -1,6 +1,6 @@
 # Generative Machine Learning
 
-For for more information, see [post](https://mbaranr.github.io/blog/2023/simpsons_gan/).
+For more information, see [post](https://mbaranr.github.io/blog/2023/simpsons_gan/).
 
 ## GAN
 
