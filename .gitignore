@@ -1,2 +1,6 @@
-extracted_data/
-minist_data/
+*.pyc
+__pycache__/
+checkpoints/
+outputs/
+datasets/
+playground.ipynb

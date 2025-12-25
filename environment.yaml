@@ -1,0 +1,19 @@
+name: img-gen
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - libjpeg-turbo
+  - libpng
+  - numpy
+  - scipy
+  - matplotlib
+  - tqdm
+  - imageio
+  - ipykernel
+  - jupyter
+  - notebook
