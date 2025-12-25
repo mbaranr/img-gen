@@ -21,6 +21,7 @@ The following datasets are used:
 
 ## Results
 
+<div align="center">
 <table>
   <tr>
     <th>Model</th>
@@ -30,8 +31,8 @@ The following datasets are used:
 
   <tr>
     <td><b><a href="https://doi.org/10.48550/arXiv.1511.06434" target="_blank"> DCGAN </a></b></td>
-    <td><img src="assets/dcgan_progress.gif" width="256"></td>
-    <td><img src="assets/dcgan_cherry.png" width="256"></td>
+    <td><img src="assets/dcgan_progress.gif" width="300"></td>
+    <td><img src="assets/dcgan_cherry.png" width="300"></td>
   </tr>
 
   <tr>
@@ -40,3 +41,4 @@ The following datasets are used:
     <td></td>
   </tr>
 </table>
+</div>
