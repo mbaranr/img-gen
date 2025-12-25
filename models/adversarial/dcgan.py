@@ -12,7 +12,7 @@ def weights_init(m):
         nn.init.constant_(m.bias, 0)
 
 
-class DCGenerator(nn.Module):
+class Generator(nn.Module):
     def __init__(self, nz=100, nc=3, ngf=64):
         super().__init__()
 
@@ -29,7 +29,7 @@ class DCGenerator(nn.Module):
                 stride=1,
                 padding=0,
                 activation=nn.ReLU(inplace=True),
-                use_bn=True,
+                norm="batch",
                 bias=False,
                 output_padding=0,
             )
@@ -45,7 +45,7 @@ class DCGenerator(nn.Module):
                     stride=2,
                     padding=1,
                     activation=nn.ReLU(inplace=True),
-                    use_bn=True,
+                    norm="batch",
                     bias=False,
                     output_padding=0,
                 )
@@ -60,7 +60,7 @@ class DCGenerator(nn.Module):
                 stride=2,
                 padding=1,
                 activation=nn.Tanh(),
-                use_bn=False,
+                norm=None,
                 bias=False,
                 output_padding=0,
             )
@@ -70,8 +70,9 @@ class DCGenerator(nn.Module):
 
     def forward(self, z):
         return self.model(z)
-  
-class DCDiscriminator(nn.Module):
+
+
+class Discriminator(nn.Module):
     def __init__(self, nc=3, ndf=64):
         super().__init__()
 
@@ -88,7 +89,7 @@ class DCDiscriminator(nn.Module):
                 stride=2,
                 padding=1,
                 activation=nn.LeakyReLU(0.2, inplace=True),
-                use_bn=False,
+                norm=None,
                 bias=False,
             )
         )
@@ -103,13 +104,13 @@ class DCDiscriminator(nn.Module):
                     stride=2,
                     padding=1,
                     activation=nn.LeakyReLU(0.2, inplace=True),
-                    use_bn=True,
+                    norm="batch",
                     bias=False,
                 )
             )
 
         # final classifier
-        layers.append(nn.Conv2d(channels[-1], 1, kernel_size=4, stride=1, padding=0, bias=False))
+        layers.append(nn.Conv2d(channels[-1], 1, kernel_size=4, stride=1, padding=0, norm="batch" ,bias=False))
         layers.append(nn.Sigmoid())
 
         self.model = nn.Sequential(*layers)

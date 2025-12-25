@@ -4,3 +4,4 @@ checkpoints/
 outputs/
 datasets/
 playground.ipynb
+.DS_Store
