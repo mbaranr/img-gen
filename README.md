@@ -25,21 +25,18 @@ The following datasets are used:
 <table>
   <tr>
     <th>Model</th>
-    <th>Epochs</th>
     <th>Training Progress</th>
     <th>Cherrypicked Samples</th>
   </tr>
 
   <tr>
     <td><b><a href="https://doi.org/10.48550/arXiv.1511.06434" target="_blank"> DCGAN </a></b></td>
-    <td>5</td>
     <td><img src="assets/dcgan_progress.gif" width="300"></td>
     <td><img src="assets/dcgan_cherry.png" width="300"></td>
   </tr>
 
   <tr>
     <td><b><a href="https://doi.org/10.48550/arXiv.1704.00028" target="_blank"> WGAN-GP </a></b></td>
-    <td>coming soon...</td>
     <td>coming soon...</td>
     <td>coming soon...</td>
   </tr>
