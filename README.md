@@ -1,6 +1,6 @@
 # Image Generative Modeling
 
-Sandbox for implementing, experimenting, and testing different classes of image generation models. Implementations may be simplified or incomplete to better understand core ideas and trade-offs.
+Sandbox for implementing and testing different classes of image generation models. Implementations may be simplified or incomplete to better understand core ideas and trade-offs.
 
 ## Model Families
 
