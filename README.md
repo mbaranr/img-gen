@@ -4,7 +4,7 @@ Sandbox for implementing and testing different classes of image generation model
 
 ## Model Families
 
-The following broad families of generative models are explored:
+The following broad families of generative models are (or will be) explored:
 
 - adversarial 
 - diffusion-based 
