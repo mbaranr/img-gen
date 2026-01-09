@@ -28,7 +28,6 @@ The following datasets are used:
     <th>Training Progress</th>
     <th>Cherrypicked Samples</th>
   </tr>
-
   <tr>
     <td><b><a href="https://doi.org/10.48550/arXiv.1511.06434" target="_blank"> DCGAN </a></b></td>
     <td><img src="assets/dcgan_progress.gif" width="300"></td>
